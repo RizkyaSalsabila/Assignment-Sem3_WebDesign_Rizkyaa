@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    background-image: linear-gradient(to right, #4682B4, #00FFFF, #00FA9A);
+}
+
+/* Latihan satu*/
+.container-satu {
+    width: 1400px;
+    margin: 50px auto;
+    background-color: #eeeeee;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.sidebar-satu {
+    order: 1;
+    width: 1000px;
+    padding: 15px;   
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-image: linear-gradient(to right, #4682B4, #00FFFF, #00FA9A);
+    padding: 20px auto;
+}
+
+.kolom-utama {
+    order: 2;
+    padding: 15px;
+}
+
+h2, h3 {
+    text-shadow: 3px 2px 1px grey;
+    text-align: center;
+    background-image: linear-gradient(to right, #4682B4, #00FFFF, #00FA9A);
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 10px 7px 3px grey;
+}
+
+img:hover {
+    box-shadow: 10px 7px 3px #4682B4;
+}
+
+.sidebar-dua {
+    order: 3;
+    padding: 15px;
+}
