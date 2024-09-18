@@ -34,4 +34,17 @@
     echo "Apakah $a lebih besar dari $b?" . ($hasilLebihBesar ? ' true' : ' false') . "<br>";
     echo "Apakah $a lebih kecil sama dengan $b?" . ($hasilLebihKecilSama ? ' true' : ' false') . "<br>";
     echo "Apakah $a lebih besar sama dengan $b?" . ($hasilLebihBesarSama ? ' true' : ' false') . "<br>";
+
+
+    //3.3
+    echo "<br><br><b>--- OPERATOR LOGIKA ---</b><br>";
+    $hasilAnd = $a && $b;
+    $hasilOr = $a || $b;
+    $hasilNotA = !$a;
+    $hasilNotB = !$b;
+
+    echo "Apaka hasil $a dan $b?" . ($hasilAnd ? ' true' : ' false') . "<br>";
+    echo "Apakah hasil $a atau $b?" . ($hasilOr ? ' true' : ' false') . "<br>";
+    echo "Apakah bukan $a?" . ($hasilNotA ? ' true' : ' false') . "<br>";
+    echo "Apakah bukan $b?" . ($hasilNotB ? ' true' : ' false') . "<br>";
 ?>
