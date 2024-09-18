@@ -29,4 +29,13 @@
     echo "Rata - rata : {$rataRata} <br><br>";
 
     var_dump($rataRata);
+
+    //2.3
+    echo "<br><br>--- KETIGA ---<br>";
+    $apakahSiswaLulus = true;
+    $apakahSiswaSudahUjian = false;
+
+    var_dump($apakahSiswaLulus);
+    echo "<br>";
+    var_dump($apakahSiswaSudahUjian);
 ?>
