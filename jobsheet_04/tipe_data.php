@@ -1,4 +1,6 @@
 <?php
+    //2.1
+    echo "--- PERTAMA ---<br>";
     $a = 10;
     $b = 5;
     $c = $a + 5;
@@ -12,4 +14,19 @@
     echo "Variabel e: {$e} <br><br>";
 
     var_dump($e);
+
+    //2.2
+    echo "<br><br>--- KEDUA ---<br>";
+    $nilaiMatematika = 5.1;
+    $nilaiIPA = 6.7;
+    $nilaiBahasaIndonesia = 9.3;
+
+    $rataRata = ($nilaiMatematika + $nilaiIPA + $nilaiBahasaIndonesia) / 3;
+
+    echo "Matematika : {$nilaiMatematika} <br>";
+    echo "IPA : {$nilaiIPA} <br>";
+    echo "Bahasa Indonesia : {$nilaiBahasaIndonesia} <br>";
+    echo "Rata - rata : {$rataRata} <br><br>";
+
+    var_dump($rataRata);
 ?>
