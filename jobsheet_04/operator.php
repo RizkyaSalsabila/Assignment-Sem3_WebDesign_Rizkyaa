@@ -47,4 +47,5 @@
     echo "Apakah hasil $a atau $b?" . ($hasilOr ? ' true' : ' false') . "<br>";
     echo "Apakah bukan $a?" . ($hasilNotA ? ' true' : ' false') . "<br>";
     echo "Apakah bukan $b?" . ($hasilNotB ? ' true' : ' false') . "<br>";
+
 ?>
