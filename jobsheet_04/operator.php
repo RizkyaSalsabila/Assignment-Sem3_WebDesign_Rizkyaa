@@ -48,4 +48,18 @@
     echo "Apakah bukan $a?" . ($hasilNotA ? ' true' : ' false') . "<br>";
     echo "Apakah bukan $b?" . ($hasilNotB ? ' true' : ' false') . "<br>";
 
+
+    //3.4
+    echo "<br><br><b>--- OPERATOR PENUGASAN ---</b><br>";
+    echo "Nilai a = $a dan nilai b = $b<br>";
+    $a += $b;
+    echo "Hasil penjumlahan adalah $a<br>";
+    $a -= $b;
+    echo "Hasil pengurangan adalah $a<br>";
+    $a *= $b;
+    echo "Hasil perkalian adalah $a<br>";
+    $a /= $b;
+    echo "Hasil pembagian adalah $a<br>";
+    $a %= $b;
+    echo "Hasil sisa bagi adalah $a<br>";
 ?>
