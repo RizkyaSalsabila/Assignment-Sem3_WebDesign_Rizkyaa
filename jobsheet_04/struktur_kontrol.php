@@ -15,7 +15,7 @@
 
 
     //4.2
-    echo "<br><br><b>--- STRUKTUR PERULANGAN ---</b><br>";
+    echo "<br><br><b>--- STRUKTUR PERULANGAN_WHILE ---</b><br>";
     $jarakSaatIni = 0;
     $jarakTarget = 500;
     $peningkatanHarian = 30;
@@ -27,4 +27,18 @@
     }
 
     echo "Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
+
+
+    //4.3
+    echo "<br><br><b>--- STRUKTUR PERULANGAN_FOR ---</b><br>";
+    $jumlahLahan = 10;
+    $tanamanPerLahan = 5;
+    $buahPerTanaman = 10;
+    $jumlahBuah = 0;
+
+    for ($i = 1; $i <= $jumlahLahan; $i++) {
+        $jumlahBuah += ($tanamanPerLahan * $buahPerTanaman);
+    }
+
+    echo "Jumlah buah yang akan dipanen adalah $jumlahBuah"
 ?>
