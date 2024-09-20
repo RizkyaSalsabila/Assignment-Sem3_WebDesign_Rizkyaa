@@ -62,4 +62,12 @@
     echo "Hasil pembagian adalah $a<br>";
     $a %= $b;
     echo "Hasil sisa bagi adalah $a<br>";
+
+
+    //3.5
+    echo "<br><br><b>--- OPERATOR IDENTIK ---</b><br>";
+    $hasilIdentik = $a === $b;
+    $hasilTidakIdentik = $a !== $b;
+    echo "Apakah $a identik dengan $b?" . ($hasilIdentik ? ' true' : ' false') . "<br>";
+    echo "Apakah $a tidak identik dengan $b?" . ($hasilTidakIdentik ? ' true' : ' false') . "<br>";
 ?>
