@@ -1,5 +1,6 @@
 <?php
     //4.6
+    echo "<b>--- STUDI KASUS 1 ---</b><br>";
     echo "<b>Soal cerita : </b> Ada seorang guru ingin menghitung total nilai dari 10 siswa dalam ujian matematika. 
     Guru ini ingin mengabaikan dua nilai tertinggi dan dua nilai terendah. Bantu guru ini menghitung total nilai yang 
     akan digunakan untuk menentukan nilai rata-rata setelah mengabaikan nilai tertinggi dan terendah. 
@@ -38,5 +39,30 @@
             echo "$daftarNilai ";
         }
         echo "} <br>";
+    }
+
+
+    //4.7
+    echo "<br><br><b>--- STUDI KASUS 2 ---</b><br>";
+    echo "<b>Soal cerita : </b> Seorang pelanggan ingin membeli sebuah produk dengan harga Rp 120.000. Toko tersebut menawarkan 
+    diskon sebesar 20% untuk pembelian di atas Rp 100.000. Bantu pelanggan ini untuk menghitung harga yang harus dibayar 
+    setelah mendapatkan diskon. <br>";
+    echo "<b><br>Penyelesaian : </b><br>";
+
+    //harga produk
+    $hargaProduk = 120000;
+    echo "Harga produk pembelian barang : $hargaProduk<br><br>";
+
+    //jumlah diskon
+    $diskon = 0.2;
+
+    //kondisi
+    if ($hargaProduk > 100000) {
+       $hargaProduk -= $hargaProduk * $diskon;
+       echo "Selamat Anda mendapatkan diskon sebesar 20%<br>";
+       echo "Total harga pembayaran Anda menjadi : Rp $hargaProduk<br>";
+    } else {
+        echo "Maaf, Anda tidak mendapat diskon potongan harga<br>";
+        echo "Harga yang harus dibayar : Rp $hargaProduk<br>";
     }
 ?>
