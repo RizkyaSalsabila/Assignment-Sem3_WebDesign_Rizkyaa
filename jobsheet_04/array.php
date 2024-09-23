@@ -61,4 +61,38 @@
     foreach ($daftarNilai[$mataKuliah] as $nilai) {
         echo "Nama : {$nilai[0]}, Nilai : {$nilai[1]} <br>";
     }
+
+
+    //5.4
+    echo "<b><br><br>--- STUDI KASUS ARRAY 2 DIMENSI ---</b><br>";
+    echo "<b>Soal cerita : </b> Seorang guru ingin mencetak daftar nilai siswa dalam ujian matematika. Guru tersebut memiliki 
+    data setiap siswa terdiri dari nama dan nilai. Bantu guru ini mencetak daftar nilai siswa yang mencapai nilai di atas 
+    rata-rata kelas. Dengan ketentuan nama dan nilai siswa Alice dapat 85, Bob dapat 92, Charlie dapat 78, David dapat 64, 
+    Eva dapat 90 <br>";
+    echo "<b><br>Penyelesaian : </b><br>";
+
+    $nilaiUjianMTK = [
+        ['Alice', 85],
+        ['Bob', 92],
+        ['Charlie', 78],
+        ['David', 64],
+        ['Eva', 90],
+    ];
+
+    $totalNilai = 0;
+    $jumlahSiswa = count($nilaiUjianMTK);
+
+    foreach ($nilaiUjianMTK as $nilaiMTK) {
+        $totalNilai += $nilaiMTK[1];
+    }
+
+    $rataRataNilai = $totalNilai / $jumlahSiswa;
+    echo "Rata rata nilai kelas : $rataRataNilai<br><br>";
+    echo "Banyaknya siswa yang lulus di atas rata rata : <br>";
+
+    foreach ($nilaiUjianMTK as $nilaiMTK) {
+        if ($nilaiMTK[1] > $rataRataNilai) {
+            echo "Nama : {$nilaiMTK[0]}, Nilai : {$nilaiMTK[1]} <br>";
+        }
+    }
 ?>
