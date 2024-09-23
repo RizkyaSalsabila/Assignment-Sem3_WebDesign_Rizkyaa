@@ -65,4 +65,20 @@
         echo "Maaf, Anda tidak mendapat diskon potongan harga<br>";
         echo "Harga yang harus dibayar : Rp $hargaProduk<br>";
     }
+
+
+    //4.8
+    echo "<br><br><b>--- STUDI KASUS 3 ---</b><br>";
+    echo "<b>Soal cerita : </b> Seorang pemain game ingin menghitung total skor mereka dalam permainan. Mereka mendapatkan skor berdasarkan poin 
+    yang mereka kumpulkan. Jika mereka memiliki lebih dari 500 poin, maka mereka akan mendapatkan hadiah tambahan. Buat tampilan baris pertama 
+    “Total skor pemain adalah: (poin)”. Dan baris kedua “Apakah pemain mendapatkan hadiah tambahan? (YA/TIDAK)” <br>";
+    echo "<b><br>Penyelesaian : </b><br>";
+
+    //misal jumlah skor yang didapat
+    $skor = 360;
+    echo "Total skor pemain adalah : <b>$skor poin</b><br>";
+
+    //ternary pada hadiah
+    $hadiah = ($skor > 500 ? "YA" : "TIDAK");
+    echo "Apakah pemain mendapat hadiah ? <b>$hadiah</b>";
 ?>
