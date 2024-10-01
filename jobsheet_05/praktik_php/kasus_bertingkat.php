@@ -22,7 +22,13 @@
         echo "<ul>";
 
         foreach ($menu as $key => $item) {
-            echo "<li>{$item['nama']}</li>";
+            echo "<li>{$item['nama']}";
+
+            //no 12
+            if (isset($item['subMenu'])) {
+                tampilkanMenuBertingkat($item['subMenu']);
+            }
+            echo "</li>";
         }
         echo "</ul>";
     }
