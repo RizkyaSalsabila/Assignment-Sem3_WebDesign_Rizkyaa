@@ -1,10 +1,10 @@
 <?php
     //buat fungsi
-    function perkenalan($nama, $salam = "Assalamualaikum") {
-        echo $salam . ", ";
-        echo "Perkenalkan nama saya " . $nama . "<br/>";
-        echo "Senang berkenalan dengan Anda<br><br>";
-    }
+    // function perkenalan($nama, $salam = "Assalamualaikum") {
+    //     echo $salam . ", ";
+    //     echo "Perkenalkan nama saya " . $nama . "<br/>";
+    //     echo "Senang berkenalan dengan Anda<br><br>";
+    // }
 
     //panggil fungsi perkenalan()
     perkenalan("Hamdana (*-*)", "Hello");
@@ -23,5 +23,18 @@
         return $umur;
     }
 
-    echo "Umur saya adalah : " . hitungUmur(2004, 2023) . " tahun";
+    echo "Umur saya adalah : " . hitungUmur(2004, 2023) . " tahun<br><br>";
+
+
+    function perkenalan($nama, $salam = "Assalamualaikum") {
+        echo $salam. ", ";
+        echo "Perkenalkan nama saya " . $nama . "<br/>";
+    }
+
+    //panggil fungsi
+    echo "Saya berusia " .hitungUmur(2004, 2023) . " tahun<br>";
+    echo "Senang berkenalan dengan Anda<br>";
+
+    //panggil fungsi perkenalan
+    perkenalan("Elok");
 ?>
