@@ -1,27 +1,17 @@
 <?php
-    //Koneksi ke Database
-    $koneksi = mysqli_connect("localhost", "username", "password", "nama_database");
+    //deklarasi
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "prakwebdb";
 
-    //Cek Koneksi
-    if (!$koneksi) {
-        die("Koneksi Gagal : " . mysqli_connect_error());
-    }
+    //variabel untuk koneksi
+    $connect = new mysqli($servername, $username, $password, $dbname);
 
-    //Query untuk membuat tabel user
-    $sql = "CREATE TABLE user (
-            id INT(11) AUTO_INCREMENT PRIMARY KEY,
-            username VARCHAR(50) NOT NULL,
-            password VARCHAR(50) NOT NULL,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )";
-
-    //Eksekusi Query
-    if (mysqli_query($koneksi, $sql)) {
-        echo "Table user berhasil dibuat.";
+    //cek koneksi
+    if ($connect->connect_error) {
+        die("Koneksi gagal : " . $connect->connect_error);
     } else {
-        echo "Error : " . mysqli_error($koneksi);
+        echo "Koneksi berhasil.";
     }
-
-    //Tutup koneksi
-    mysqli_close($koneksi);
 ?>
