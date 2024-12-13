@@ -2,7 +2,7 @@
     //untuk menghubungkan ke database
     include 'koneksi.php';
 
-    //input user and password
+    //input username and password
     $username = "admin";
     $password = "123";
 
