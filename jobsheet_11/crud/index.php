@@ -11,7 +11,7 @@
             <?php
                 include('koneksi.php');
 
-                $query = "SELECT * FROM Anggota ORDER BY id DESC";
+                $query = "SELECT * FROM anggota ORDER BY id DESC";
                 $result = mysqli_query($connect, $query);
 
                 if (mysqli_num_rows($result) > 0) {
@@ -33,7 +33,7 @@
                             <td>" . $kelamin . "</td>
                             <td>" . $row["alamat"] . "</td>
                             <td>" . $row["no_telp"] . "</td>
-                            <td><a href='edit.php? id = " . $row["id"] . "'>Edit</a> |
+                            <td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> |
                                 <a href='#' onclick='konfirmasiHapus(" . $row["id"] . ", \"" . $row["nama"] . "\")'>Hapus</a></td>
                                 </tr>";
                     }
